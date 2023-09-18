@@ -1,6 +1,7 @@
 <h2>Reservations List</h2>
 <ul *ngIf="reservations.length; else noReservation">
   <li *ngFor="let reservation of reservations">
+    ID: {{ reservation.id }} <br />
     Date: {{ reservation.checkInDate }} <br />
     Guest: {{ reservation.guestName }} <br />
     Email: {{ reservation.guestEmail }} <br />
